@@ -1,0 +1,125 @@
+    .custom-navbar {
+      background: linear-gradient(90deg, #198754, #157347);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .profile-dropdown {
+      cursor: pointer;
+    }
+
+    body{
+        background-color: rgb(255, 252, 214);
+    }
+
+    .result-wrapper {
+  margin-top: 80px; /* bebas atur */
+}
+
+    /* ===== HEADER ===== */
+    .header h3 {
+      font-weight: 700;
+      color: #0d6efd;
+    }
+
+    /* ===== CARD FORM ===== */
+    .card {
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-body h3 {
+      font-weight: 700;
+      color: #0d6efd;
+    }
+
+    /* ===== FORM ===== */
+    .form-control {
+      border-radius: 12px;
+      padding: 10px 14px;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #0d6efd;
+    }
+
+    /* ===== BUTTON ===== */
+    .btn-primary {
+      border-radius: 30px;
+      font-weight: 600;
+      background: linear-gradient(90deg, #0d6efd, #0a58ca);
+      border: none;
+    }
+
+    /* ===== ID CARD ===== */
+    .id-card {
+      animation: fadeIn 0.4s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .main-wrapper {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    /* TURUN KE BAWAH */
+    .content-row {
+      margin-top: 100px;
+    }
+
+    /* FORM */
+    .form-card {
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+
+    /* RESULT */
+    .result-card {
+      border-radius: 20px;
+      min-height: 420px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+
+    .result-card .card-header {
+      background-color: #f8f9fa;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    /* ID CARD CENTER */
+    .id-card-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 992px) {
+      .main-wrapper {
+        padding: 20px;
+      }
+
+      .content-row {
+        margin-top: 40px;
+      }
+
+      .result-card {
+        margin-top: 30px;
+      }
+    }

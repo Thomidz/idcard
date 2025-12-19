@@ -20,7 +20,7 @@ if(isset($_POST['register'])){
     } else {
         $query = "INSERT INTO users (nama, nim, jurusan, password) VALUES ('$nama', '$nim', '$jurusan', '$pass')";
         if(mysqli_query($conn, $query)){
-            echo "<script>alert('Berhasil Daftar! Silakan Login.'); window.location='login.php';</script>";
+            echo "<script>alert('Berhasil Daftar! Silakan Login.'); window.location='index.php';</script>";
         } else {
             $error = "Terjadi kesalahan saat mendaftar.";
         }
@@ -36,9 +36,11 @@ if(isset($_POST['register'])){
     <title>Daftar Akun | Sistem ID Card USU</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="registerstyle.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         :root {
-            --usu-green: #1a5c2b;
+            --usu-green: #1a5c2bff;
             --usu-gold: #c5a059;
             --soft-gray: #f8f9fa;
         }
@@ -171,7 +173,7 @@ if(isset($_POST['register'])){
                         
                         <div class="text-center mt-2">
                             <span class="text-muted small">Sudah memiliki akun?</span> 
-                            <a href="login.php" class="text-success small fw-bold text-decoration-none ms-1">Login di sini</a>
+                            <a href="index.php" class="text-success small fw-bold text-decoration-none ms-1">Login di sini</a>
                         </div>
                     </form>
                 </div>

@@ -1,0 +1,95 @@
+        :root {
+            --usu-green: #1a5c2b;
+            --usu-gold: #c5a059;
+            --soft-gray: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #e0e0e0 0%, #ffffff 100%);
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .root {
+            background-color: transparent;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bg-decoration {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: rgba(26, 92, 43, 0.05);
+            border-radius: 50%;
+            z-index: -1;
+            top: -100px;
+            right: -100px;
+        }
+
+        .card-login {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .login-header h3 {
+            font-weight: 700;
+            color: var(--usu-green);
+            letter-spacing: -0.5px;
+        }
+
+        .form-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #555;
+            margin-left: 4px;
+        }
+
+        .form-control {
+            border-radius: 12px;
+            padding: 0.75rem 1rem;
+            border: 2px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--usu-green);
+            box-shadow: none;
+            background-color: #fff;
+        }
+
+        .btn-login {
+            background: linear-gradient(to right, var(--usu-green), #2d8a41);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 0.8rem;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(26, 92, 43, 0.3);
+            color: white;
+        }
+
+        .brand-logo {
+            width: 70px;
+            margin-bottom: 1.5rem;
+        }
+
+        .alert {
+            border-radius: 12px;
+            font-size: 0.9rem;
+            border: none;
+        }
